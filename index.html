@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;subset=latin-ext" rel="stylesheet">
+        <link href="stylesheets/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="tab">
+              <button class="tablinks" onclick="openCity(event, 'London')">Obican</button>
+              <button class="tablinks" onclick="openCity(event, 'Paris')">Sistemski</button>
+              <button class="tablinks" onclick="openCity(event, 'Tokyo')">Obrisi sve</button>
+            </div>
+
+            <div id="London" class="tabcontent">
+              <div class="mec">
+                    Real Madrid : Barselona
+              </div>
+              <div class="time">
+                    Pon 16:30
+              </div>
+              <div class="opis">
+                    Barselona ce dobiti na mecu
+              </div>
+            </div>
+
+            <!-- <div id="Paris" class="tabcontent">
+              <h3>Paris</h3>
+              <p>Paris is the capital of France.</p>
+            </div>
+
+            <div id="Tokyo" class="tabcontent">
+              <h3>Tokyo</h3>
+              <p>Tokyo is the capital of Japan.</p>
+            </div> -->
+
+            <script>
+                function openCity(evt, cityName) {
+                    var i, tabcontent, tablinks;
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    document.getElementById(cityName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                }
+            </script>
+        </div>
+
+    </body>
+</html>
