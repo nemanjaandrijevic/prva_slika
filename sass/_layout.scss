@@ -1,13 +1,18 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
 .container {
     background-color: $background;
     width: 300px;
     margin: 0 auto;
     color: white;
+    font-size: 11px;
+
 }
 /* Style the tab */
 div.tab {
 overflow: hidden;
-// border: 1px solid #ccc;
 background-color: black;
 }
 /* Style the buttons inside the tab */
@@ -26,18 +31,79 @@ div.tab button {
 /* Change background color of buttons on hover */
 div.tab button:visited {
     background-color: $background;
-    color: white;
+
 }
 
 /* Create an active/current tablink class */
 div.tab button.active {
     background-color: $background;
+    color: white;
 }
 
 /* Style the tab content */
 .tabcontent {
     display: none;
     padding: 6px 12px;
-    // border: 1px solid #ccc;
     border-top: none;
+
+}
+
+.tabcontent.active {
+    display: block;
+}
+
+.poz {
+    margin-left: 62px;
+}
+
+.parovi,
+.izabrano,
+.dobitak {
+    .row:last-child {
+        border-bottom: none;
+    }
+}
+
+.row {
+    padding: 5px 5px;
+    margin: 0 3px;
+    border-bottom: 1px solid $border-c;
+    .opis{
+        padding-top: 5px;
+    }
+}
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.kvota {
+    text-align: right;
+    float: right;
+}
+
+.uplati-tiket {
+    border: 1px solid $border-c;
+    background-color: $background-t;
+
+}
+
+.izabrano {
+    background-color: $background;
+    margin: 0 3px;
+    .poz-i {
+        margin-top: 3px;
+    }
+}
+.dobitak {
+    padding: 0 3px;
+    button {
+        width: 100%;
+        background-color: blue;
+        color: white;
+        border: none;
+        border-style: none;
+        margin: 0;
+    }
 }
