@@ -57,15 +57,14 @@ div.tab button.active {
 }
 
 .parovi,
-.izabrano,
-.dobitak {
+.izabrano {
     .row:last-child {
         border-bottom: none;
     }
 }
 
 .row {
-    padding: 5px 5px;
+    padding: 10px 5px;
     margin: 0 3px;
     border-bottom: 1px solid $border-c;
     .opis{
@@ -81,6 +80,13 @@ div.tab button.active {
 .kvota {
     text-align: right;
     float: right;
+}
+.color-k {
+    color: yellow;
+}
+
+.size {
+    font-size: 13px;
 }
 
 .uplati-tiket {
@@ -98,6 +104,14 @@ div.tab button.active {
 }
 .dobitak {
     padding: 0 3px;
+    padding-bottom: 3px;
+    .row {
+        border-bottom: 1px solid $border-c-1;
+        .row:last-child {
+            border-bottom: 0;
+        }
+    }
+
     button {
         width: 100%;
         background-color: blue;
@@ -105,5 +119,7 @@ div.tab button.active {
         border: none;
         border-style: none;
         margin: 0;
+        text-transform: uppercase;
+        padding: 10px;
     }
 }
