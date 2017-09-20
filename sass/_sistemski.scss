@@ -1,0 +1,38 @@
+#Paris {
+    .parovi {
+        .row {
+            display: flex;
+            flex-direction: row;
+
+            .fix {
+                display: flex;
+                align-items: flex-start;
+
+                span {
+                    &.fix-y {
+                        background-color: yellow;
+                    }
+                    padding: 3px;
+                    margin-right: 10px;
+                    margin-top: 3px;
+                    background-color: blue;
+                }
+            }
+
+            .fix-1 {
+                flex: 1;
+            }
+        }
+    }
+    .izabrano {
+        .row {
+            .cek-box {
+                padding: 7px 0 0 0;
+                input{
+                    width: 20px;
+                }
+            }
+
+        }
+    }
+}
