@@ -26,10 +26,60 @@
     }
     .izabrano {
         .row {
-            .cek-box {
-                padding: 7px 0 0 0;
-                input{
-                    width: 20px;
+            .br-parova {
+                .div-section {
+                    display: flex;
+                    flex-direction: row;
+                    section {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        margin-top: 5px;
+                        .checkboxFive {
+                        	width: 18px;
+                            height: 25px;
+                        	// margin: 20px 50px;
+                        	position: relative;
+                        }
+                        .checkboxFive label {
+                        	cursor: pointer;
+                        	position: absolute;
+                        	width: 10px;
+                        	height: 10px;
+                        	top: 6px;
+                          	left: 0;
+                        	background: $background;
+                        	border:1px solid blue;
+                        }
+                        .checkboxFive1 label {
+                            background-color: blue;
+                        }
+
+                        .checkboxFive1 label:after {
+                        	// opacity: 0.2;
+                        	content: '';
+                        	position: absolute;
+                        	width: 6px;
+                        	height: 3px;
+                        	background: transparent;
+                        	top: 1px;
+                        	left: 1px;
+                        	border: 2px solid white;
+                        	border-top: none;
+                        	border-right: none;
+
+                        	transform: rotate(-45deg);
+                        }
+                        .checkboxFive label:hover::after {
+                        	opacity: 0.5;
+                        }
+                        .checkboxFive input[type=checkbox]:checked + label:after {
+                        	opacity: 1;
+                        }
+                        .cetvrtina {
+                            margin-right: 18px;
+                        }
+                    }
                 }
             }
 
